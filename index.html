@@ -7,25 +7,23 @@
     <title>Complete website using HTML and CSS</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Coda&family=Montserrat:wght@100&family=Shadows+Into+Light+Two&family=Zen+Kaku+Gothic+New:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div id="preloader">
+
+    </div>
     <section id="header">
         <div class="container">
-            <img src="images/logo.png" class="logo">
+            <h1 class="leynud">Leynud</h1>
             <div class="header-text">
                 <h1>The purpose is to<br>teach,bring learning to people</h1>
-                <span class="square"></span>
                 <p>The purpose of learning in life is to gain knowledge. To expand on what you already know. With knowledge your able to live a fulfilling life. To share your knowledge and experiences helps others to learn and grow. Constant learning helps you grow as an individual. It helps you to make better productive choices in life. You become smarter. Learning is growing.</p>
                 <button class="common-btn">Read More</button>
-                <div class="line">
-                    <span class="line-1"></span><br>
-                    <span class="line-2"></span><br>
-                    <span class="line-3"></span>
-                </div>
             </div>
         </div>
     </section>
-    <nav id="sideNav">
+   <nav id="sideNav">
         <ul>
           <li><a href="#header">HOME</a></li>
           <li><a href="#about">ABOUT US</a></li>
@@ -43,20 +41,16 @@
         <div class="about-right-col">
             <div class="about-text">
                 <h1>About Us</h1>
-                <span class="square"></span>
                 <p> <b>Leynud</b> is a great learning platform for those who still thinking of start their career soon.
              Sometimes learning journeys can be uncomfortable and challenging as we reflect and expand our understanding. This website supports and encourages you to keep learning.Our courses includes Web Development,Photography,Marketing,Design and Management.</p><br><br>
 
-                <div class="line">
-                    <span class="line-1"></span><br>
-                    <span class="line-2"></span><br>
-                    <span class="line-3"></span>
-                </div>
+               
                 <h2> “Research shows that you begin learning in the womb and go right on learning until the moment you pass on. Your brain has a capacity for learning that is virtually limitless, which makes every human a potential genius.” </h2>
                 <h3>---------– Michael J. Gelb</h3>
             </div>
         </div>
     </section>
+    
     <!--features-->
     <section id="features">
         <div class="feature-row">
@@ -77,11 +71,7 @@
             </div>
         </div>
         <div class="feature-btn">
-            <div class="line">
-                <span class="line-1"></span><br>
-                <span class="line-2"></span><br>
-                <span class="line-3"></span>
-            </div>
+            
             <button class="common-btn">Start Free Trail</button>
         </div>
     </section>
@@ -91,15 +81,10 @@
         <div class="course-left-col">
             <div class="course-text">
                 <h1>Browse our top<br>Courses</h1>
-                <span class="square"></span>
                 <p>Our learning journey is travelled by many people coming together. Through meaningful relationships and collaborations, we create learning experiences that make all our identities and futures possible.</p>
                 <button class="common-btn">View all course</button>
                 
-                <div class="line">
-                    <span class="line-1"></span><br>
-                    <span class="line-2"></span><br>
-                    <span class="line-3"></span>
-                </div>
+               
             </div>
 
         </div>
@@ -116,14 +101,9 @@
     <div class="about-right-col">
         <div class="about-text">
             <h1>Limitless Learning,<br> Limitless possibilities</h1>
-            <span class="square"></span>
             <p>We tell our story through the principles of Relationality, Togetherness, Pro-activity, Community and Critical discernment. We extend our understandings through self-reflection and seeking answers by first asking questions of ourselves. We are open to the power of hopeful discovery and change and together we can create our story.</p><br><br>
 
-            <div class="line">
-                <span class="line-1"></span><br>
-                <span class="line-2"></span><br>
-                <span class="line-3"></span>
-            </div>
+          
             <button class="common-btn">Start Free Trail</button>
            
         </div>
@@ -143,11 +123,7 @@
                     <button class="common-btn">Start Free Trail</button>
                 </div>
             </form>
-            <div class="line">
-                <span class="line-1"></span><br>
-                <span class="line-2"></span><br>
-                <span class="line-3"></span>
-            </div>
+           
         </div>
     
         <div class="contact-right-col">
@@ -187,10 +163,10 @@
   <div class="footer-info">
       <div class="copyright-text">
           <small>Binudpangu12@gmail.com</small><br>
-          <small>@Copyright Leynud 2021<br> All rights reserved</small>
+          <small>@Copyright Leynud 2021<br></small>
       </div>
       <div class="footer-logo">
-          <img src="images/logo.png">
+        <h1 class="leynud">Leynud</h1>
           <button class="common-btn">English</button>
       </div>
   </div>
@@ -204,8 +180,7 @@
     <img src="images/twitter.png">
     <img src="images/linkedin.png">
 </div>
- 
-  <script>
+<script>
         var menuBtn=document.getElementById("menuBtn");
         var sideNav=document.getElementById("sideNav");
         
@@ -223,6 +198,13 @@
                  speed:1000,
              speedAsDuration:true
              });
+    </script>
+     <script>
+        var loader=document.getElementById("preloader");
+    
+        window.addEventListener("load",function(){
+            loader.style.display="none";
+        })
     </script>
 </body>
 </html>
