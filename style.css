@@ -13,17 +13,22 @@
     margin-right:100px;
     margin-left:100px;
 }
-.logo{
+.container .leynud{
+    color:rgb(194, 28, 56);
+    font-size:2rem;
     margin-top:30px;
-    width:220px;
-    height:150px;
+    font-family: 'Coda', cursive;
 }
+
 .header-text{
     margin-top:140px;
     max-width: 340px;
 }
 h1{
     font-size:34px;
+}
+.header-text p{
+    margin-top:20px;
 }
 .square{
     height:12px;
@@ -48,26 +53,9 @@ p{
     margin-top:16px;
     margin-bottom:40px;
 }
-.line-1{
-    display:inline-block;
-    background:#f67c92;
-    height:15px;
-    width:15px;
-}
-.line-2{
-    display:inline-block;
-    background:#f67c92;
-    height:1px;
-    width:80px;
-}
-.line-3{
-    display:inline-block;
-    background:#f67c92;
-    height:1px;
-    width:60px;
-}
-.line{
-    line-height:8px;
+.common-btn:hover{
+    background-color:rgb(236, 97, 120);
+    color:#fff;
 }
 #sideNav{
     width:250px;
@@ -95,10 +83,6 @@ nav ul li a{
     z-index:2;
     cursor:pointer;
 }
-nav ul li a:hover{
-    background:#f67c92;
-    color:#fff;
-}
 #about,#offer{
       padding:100px 0;
       display:flex;
@@ -119,6 +103,9 @@ nav ul li a:hover{
     max-width:500px;
     margin-right:100px;
     display:inline-block;
+}
+.about-text p{
+    margin-top:20px;
 }
 .about-text h2{
     margin:50px 0 10px;
@@ -263,12 +250,12 @@ hr{
     flex-wrap:wrap;
 }
 .link-title h4{
-color:#fab3c4;
+color:#d1516f;
 margin-bottom:20px;
 }
 .link-title small{
     font-size:13px;
-    color:#777;
+    color:rgb(143, 129, 129);
 }
 .footer-info{
     display:flex;
@@ -300,92 +287,100 @@ margin-bottom:20px;
   }
 
   @media only screen and (max-width:770px) {
-      #header{
-          background-image:none;
-        }
-        .container{
-            margin-right:50px;
-            margin-left:50px;
-        }
-        .logo{
-            margin-top:27px;
-            width:70px;
-            width:140px;
-            height:100px;
-            }
-        .header-text{
-            margin-top:140px;
-           }
-        h1{
-            font-size:26px;
-           }
-        #menuBtn{
-            width:40px;
-            right:50px;
-        }
-        .common-btn{
-            padding:10px 16px;
-        }
-        .social-icons img{
-            width:14px;
-            margin:15px auto;
-      
-        }
-        .about-left-col{
-            flex-basis:100%;
-        }
-        .about-right-col{
-            flex-basis:100%;
-        }
-        .about-text{
-            margin:50px 50px 0;
-            display:inline-block;
-        }
-        .about-text h2{
-            font-size:16px;
-        }
-        .feature-col{
-            flex-basis:100%;
-            margin-bottom:20px;
-        }
-        .course-left-col{
-            flex-basis:100%;
-        }
-        .course-right-col{
-            flex-basis:100%;
-            margin-top:70px;
-        }
-        .contact-left-col,.contact-right-col{
-            flex-basis:100%;
+    #header{
+        background-image:none;
+      }
+      .container{
+          margin-right:50px;
+          margin-left:50px;
+      }
+      .logo{
+          margin-top:27px;
+          width:70px;
+          width:140px;
+          height:100px;
           }
-          .contact-right-col{
-              Margin-top:50px;
-          }
-          .footer-left-col{
-            flex-basis:50%;
-            margin-top:60px;
+      .header-text{
+          margin-top:140px;
+         }
+      h1{
+          font-size:26px;
+         }
+      #menuBtn{
+          width:40px;
+          right:50px;
+      }
+      .common-btn{
+          padding:10px 16px;
+      }
+      .social-icons img{
+          width:14px;
+          margin:15px auto;
+    
+      }
+      .about-left-col{
+          flex-basis:100%;
+      }
+      .about-right-col{
+          flex-basis:100%;
+      }
+      .about-text{
+          margin:50px 50px 0;
+          display:inline-block;
+      }
+      .about-text h2{
+          font-size:16px;
+      }
+      .feature-col{
+          flex-basis:100%;
+          margin-bottom:20px;
+      }
+      .course-left-col{
+          flex-basis:100%;
+      }
+      .course-right-col{
+          flex-basis:100%;
+          margin-top:70px;
+      }
+      .contact-left-col,.contact-right-col{
+          flex-basis:100%;
         }
-        .footer-right-col{
-            flex-basis:35%;
+        .contact-right-col{
+            Margin-top:50px;
         }
         .footer-left-col{
-            flex-basis:100%;
-            margin-top:50px;
-        }
-        .footer-right-col{
-            flex-basis:100%;
-        }
-        .link-title{
-            flex-basis:50%;
-            margin-bottom:30px;
-        }
-        .copyright-text,.footer-info{
-            margin-bottom:50px;
-        }
-        .footer-logo, .common-btn{
-            margin-bottom:30px;
-        }
+          flex-basis:50%;
+          margin-top:60px;
+      }
+      .footer-right-col{
+          flex-basis:35%;
+      }
+      .footer-left-col{
+          flex-basis:100%;
+          margin-top:50px;
+      }
+      .footer-right-col{
+          flex-basis:100%;
+      }
+      .link-title{
+          flex-basis:50%;
+          margin-bottom:30px;
+      }
+      .copyright-text,.footer-info{
+          margin-bottom:50px;
+      }
+      .footer-logo, .common-btn{
+          margin-bottom:30px;
+      }
+   
+  }
 
-    }
-      
+  #preloader{
+      background: #fff url(images/doctors.gif) no-repeat center center;
+      background-size:6%;
+      height:100vh;
+      width:100%;
+      position:fixed;
+      z-index: 100;
+  }
 
